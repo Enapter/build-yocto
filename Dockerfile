@@ -27,9 +27,6 @@ RUN mkdir -p /home/build/tmp && chown build:build /home/build/tmp/
 RUN locale-gen en_US.UTF-8
 ENV LANG en_US.UTF-8
 
-ENV DL_DIR /home/build/downloads
-ENV TMPDIR /home/build/tmp
-
 ENV HOME /home/build
 ENV USER build
 
