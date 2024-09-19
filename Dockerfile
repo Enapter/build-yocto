@@ -11,7 +11,7 @@ RUN apt-get update && \
         iputils-ping python3-git python3-jinja2 python3-subunit zstd \
         liblz4-tool file locales libacl1 bc bison curl flex gnupg gperf \
         lzop wget unzip sudo socat gettext zip screen rsync jq parted liblz4-tool \
-        zstd mtools vim squashfs-tools mc rpm qemu-system rauc && \
+        zstd mtools vim squashfs-tools mc rpm qemu-system rauc dosfstools mtools  && \
     apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
 RUN pip3 install yq
