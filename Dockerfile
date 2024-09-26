@@ -14,7 +14,7 @@ RUN apt-get update && \
         zstd mtools vim squashfs-tools mc rpm qemu-system rauc dosfstools mtools  && \
     apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
-RUN pip3 install yq
+RUN pip3 install yq kas
 
 RUN groupadd --gid 1000 build && \
     useradd --uid 1000 --gid 1000 --create-home build && \
